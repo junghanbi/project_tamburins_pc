@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tamburins</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- lodash : 스크롤을 제어할 수 있는 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gshap : 자바스크립트 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- ScrollMagic : 스크롤에 따라 해당영역 감지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  
+    <!-- topButton : ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js" integrity="sha512-5ZqpMmz0hz6IocEQqdQ3sns2rJ+8ODVbZflfapvz26ZaP3nZrEjnNrpOaEW97bQYIg0XbkjFdZUun701YjOr5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main2.css">
+
+  <!-- Slick slider -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+
+</head>
+<body>
+  <!-- A area -->
+  <header><!--width : 100%-->
+    <div class="inner"><!--width : 1920px-->
+      <div class="sub-bg"></div>
+      <nav>
+        <!-- 1차 메뉴 -->
+        <ul class="gnb">
+          <!-- 제품 -->
+          <li class="item number1">
+            <a href="#">제품 보기</a>
+                <ul class="sub sub1">
+                  <li><a href="#">튜브 핸드</a></li>
+                  <li><a href="#">핸드앤바디</a></li>
+                  <li><a href="#">체인 핸드</a></li>
+                  <li><a href="#">손 소독제</a></li>
+                  <li><a href="#">향 오브젝트</a></li>
+                </ul>
+          </li>
+          <!-- 전시 -->
+          <li class="item number2">
+            <a href="#">전시 소개</a>
+            <ul class="sub sub2">
+              <li><a href="#">퍼퓸밤 컬렉션</a></li>
+              <li><a href="#">향수 컬렉션</a></li>
+              <li><a href="#">샤워리바디 컬렉션</a></li>
+              <li><a href="#">코쿤 컬렉션</a></li>
+            </ul>
+          </li>
+          <!-- 매장 -->
+          <li class="item number3">
+            <a href="#" class="number3">매장 안내</a>
+            <ul class="sub sub3">
+              <li><a href="#">대한민국</a></li>
+              <li><a href="#">중국</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidemenu">
+        <ul>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- B area -->
+  <section id="main">
+    <div class="inner">
+      <div class="title-text">
+        <h1>TAMBURINS</h1>
+        <p class="harvest">THE HARVEST</p>
+        <p class="perfume">PERFUME SOAP</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- C area -->
+  <section id="video">
+      <video muted autoplay>
+        <source src="./image/Exhibition1.mp4">
+      </video>
+  </section>
+
+  <!-- D area -->
+  <section id="collaboration">
+  </section>
+
+  <!-- E area -->
+  <section id="best" class="scroll-spy">
+    <div class="inner">
+      <div class="textBox">
+        <h3 class="back-to-position to-right delay-0">BEST SELLER</h3>
+        <div class="back-to-position delay-2">
+          <button class="btn-gray">자세히 보기</button>
+        </div>
+      </div>
+      <div class="slickslider back-to-position delay-4">
+        <div><img src="./image/slicslide_img1.png" alt="img"></div>
+        <div><img src="./image/slicslide_img2.png" alt="img"></div>
+        <div><img src="./image/slicslide_img3.png" alt="img"></div>
+        <div><img src="./image/slicslide_img4.png" alt="img"></div>
+        <div><img src="./image/slicslide_img5.png" alt="img"></div>
+        <div><img src="./image/slicslide_img6.png" alt="img"></div>
+        <div><img src="./image/slicslide_img7.png" alt="img"></div>
+        <div><img src="./image/slicslide_img8.png" alt="img"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- G area -->
+  <section id="exbition" class="scroll-spy">
+    <div class="inner">
+      <h3 class="back-to-position delay-4">EXBITION</h3>
+      <div class="imgBox">
+        <figure class="snip0015 back-to-position to-left delay-1">
+          <img src="./image/exbition1.png" alt="exbition"/>
+          <figcaption>
+            <h2>하베스트<br>퍼퓸 비누<br>컬렉션</h2>
+          </figcaption>			
+        </figure>
+        <figure class="snip0015 back-to-position to-left delay-2">
+          <img src="./image/exbition2.png" alt="exbition"/>
+          <figcaption>
+            <h2>퍼퓸밤<br>컬렉션</h2>
+          </figcaption>			
+        </figure>
+        <figure class="snip0015 back-to-position to-left delay-3">
+          <img src="./image/exbition4 1.png" alt="exbition"/>
+          <figcaption>
+            <h2>샤워리바디<br>컬렉션</h2>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <!-- H area -->
+  <section id="store" class="scroll-spy">
+    <div class="inner">
+      <div class="textBox">
+        <h3 class="back-to-position to-right delay-0">가까운 탬버린즈 매장을 찾아보세요.</h3>
+        <p class="back-to-position to-right delay-1">매장에서 탬버린즈만의 향기를 느껴보세요</p>
+        <div class="back-to-position delay-3">
+          <input type="text" placeholder="여기에 입력해주세요.">
+        <button class="btn">매장 찾기</button>
+        </div>
+      </div>
+      <ul>
+        <li><img src="./image/store1.png" alt="store"></li>
+        <li><img src="./image/store2.png" alt="store"></li>
+        <li><img src="./image/store3.png" alt="store"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- F area -->
+  <section id="fix"></section>
+
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <ul class="menu1">
+        <li><a href="#">주)아이아이컴바인드</a></li>
+        <li><a href="#">사업자등록번호: 119-86-38589</a></li>
+        <li><a href="#">대표자: 김한국</a></li>
+        <li><a href="#">서울특별시 마포구 어울마당로5길 41</a></li>
+        <li><a href="#">대표번호: 1644-1246</a></li>
+        <li><a href="#">이메일: cs@tamburins.com</a></li>
+      </ul>
+      <ul class="menu2">
+        <li><a href="#">개인정보 보호 책임자: 정태호</a></li>
+        <li><a href="#">호스팅 서비스 사업자: Aws</a></li>
+        <li><a href="#">통신판매업신고: 제 2014-서울마포-1050 호 (사업자정보확인)</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+      </ul>
+      <address>
+        고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. 서비스 가입사실 확인
+      </address>
+      <div class="copyright">ⓒ탬버린즈 대한민국</div>
+    </div>
+  </footer>
+
+  <!-- TOP BUTTON -->
+  <div id="to-top">
+    <span class="material-icons">
+      arrow_upward
+    </span>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
